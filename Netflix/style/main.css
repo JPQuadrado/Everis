@@ -10,10 +10,12 @@
 
 }
 
+/* Elementos Bases */
+
 body{
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif; /* google fonts caso queira uma fonte externa */
-
+    font-family: Arial, Times, serif; /* google fonts caso queira uma fonte externa */
+    color: white;
 }
 
 header .container{
@@ -27,7 +29,7 @@ header .container{
 header .logon{
     margin-left: 15px;
     color: var(--vermelho);
-    font-family: 'Arial Black', Times, serif;
+    font-family: 'Arial Narrow', Times, serif;
     font-size: 40px;
 }
 
@@ -40,3 +42,95 @@ header nav a{
 header nav a:hover{
     color: #FFF;
 }
+
+/* FILME */
+
+.container{             
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.filme .container{
+    width: 60%;
+}
+
+/* Wrapper = Envelope. 
+
+    No nosso codigo é chamada de conteiner,
+
+    O objetivo da classe é envelopar tudo que esta nela,
+    o que facilita de certa forma a organização e é mais facil
+    de manipular os elementos filhos.
+
+    Por padrão é uma div que guarda varios outros elementos.
+    
+    Envelopar os elementos facilita também no momento de movimenta-los
+    supondo que seja necessário passar um bloco para a esquerda no site
+    caso não esteja envelopado, seria necessário passar um por um
+    com o Wrapper é possivel movel o bloco enpacotado
+
+*/
+
+.filme{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url("/img/Sherlock.jpg");
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme .titulo{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15% ; /* melhor que pixel, pois ajusta para o mobiel */
+}
+
+/* Font awesome - buscar depois*/
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    
+    padding: 15px 30px;
+    margin-right: 20px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.botao:hover{
+    background-color: white;
+    color: var(--preto);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
+
+
+
+
+
+
