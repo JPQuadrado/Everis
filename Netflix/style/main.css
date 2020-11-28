@@ -1,0 +1,42 @@
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif; /* google fonts caso queira uma fonte externa */
+
+}
+
+header .container{
+    display: flex; /*Alinha elementos em tela, o flex tende a jogar tudo como roll*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logon{
+    margin-left: 15px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times, serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: #FFF;
+}
